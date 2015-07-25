@@ -18,8 +18,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
-
+## This function will read a cached inverse matrix by default
+## if the default matrix not found, it will calculate a new
+## inversed matrix and stored in cache
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
     m <- x$getInverse()
